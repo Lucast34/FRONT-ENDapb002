@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 2</title>
+    <!-- metodo 1 - link (puxa arquivo externo) -->
+    <!-- metodo 2 - tag style (puxa tag para abrir um espaço no html) -->
+    <!-- metodo 3 - atributo style (puxa artibuto direto no elemento) -->
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .para{
+            /* color - cor da fonte */
+            color: red;
+            /* font family - tipografia */
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            /* background color - cor de fundo */
+            background-color: aqua;
+        }
+
+        body{
+            background-color: brown;
+        }
+
+        h1{
+            color: purple;
+            /* text-align - alinhar texto no centro */
+            text-align: center;
+            /* margin - margem externa */
+            margin: 20px;
+            /* padding - margem interna */
+            padding: 20px;
+            /* border - borda (largura, tipo , cor) */
+            border: 1px solid white;
+        }
+
+        #destacado{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="destacado">TITULO</h1>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusantium rem ipsam distinctio ea, eaque molestiae debitis cumque quasi architecto nobis ducimus quibusdam inventore reprehenderit ex harum quam laudantium dolore.</p>
+    
+    <h1>TITULO2</h1>
+    <h2>subtitulo</h2>
+    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum qui magni adipisci dolorum, cumque ut eius sapiente sunt quas delectus natus numquam hic cum laboriosam, dignissimos, laudantium ipsum vero inventore!</p>
+
+    <img src="cat.jpg" alt="gatinho com guitarra">
+</body>
+</html>
