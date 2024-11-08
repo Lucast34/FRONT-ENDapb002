@@ -1,0 +1,56 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.pai{
+    width: 200px;
+    height: 300px;
+    background-color: cadetblue;
+    /* posicionamento no pai */
+    display: flex;  
+    margin: 20px;
+}
+
+#pai1{
+    /* alinhamento no eixo x */
+    justify-content: space-around;
+    /* alinhamento no eixo y */
+    align-items: center;
+    /* start (left) - esquerda */
+    /* end (right) - direita */
+    /* center - centro */
+    /* space-between - joga os elementos na lateral */
+    /* space-around - joga os elementos na lateral com espaço */
+}
+
+#pai2{
+    /* gap - espaço entre elementos */
+    gap: 20px;
+    /* wrap - joga os lementos caso não caibam na tela */
+    flex-wrap: wrap;
+    /* row - linha */
+    /* column - coluna */
+    flex-direction: row;
+}
+
+.filho{
+    width: 30px;
+    height: 30px;
+}
+
+.f1{
+    background-color: blue;
+}
+
+.f2{
+    background-color: rgb(123, 0, 255);
+}
+
+.f3{
+    background-color: rgb(255, 251, 0);
+}
+
+.f4{
+    background-color: rgb(30, 255, 0);
+}
