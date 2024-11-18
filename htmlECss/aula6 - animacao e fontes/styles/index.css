@@ -1,0 +1,60 @@
+/* animação step by step */
+@keyframes animacao {
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: aqua;
+    }
+}
+
+@font-face {
+    font-family: MarioKart ;
+    src: url(../fonts/mario_kart_ds/Mario-Kart-DS.ttf);
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    font-family: MarioKart , Arial;
+}
+
+.caixa{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#caixa1{
+    background-color: red;
+    transition: 1s;
+}
+
+#caixa1:hover{
+    border-radius: 100%;
+    transition: 1s;
+    animation: 1s animacao infinite ;
+}
+
+#caixa2{
+    background-color: green;
+    transition: 0.5s;
+}
+
+#caixa2:active{
+    width: 80%;
+    background-color: rgb(0, 41, 0);
+    transition: 0.5s;
+}
+
+#caixa3{
+    background-color: blue;
+}
