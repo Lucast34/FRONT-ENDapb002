@@ -16,11 +16,20 @@ function testes(){
 // testes()
 
 function carregarCatalogo(){
-    for (let i = 0;i < 8;i++){
+    var livros = [
+        ['images/livros/percy1.jpg','PERCY JACKSON E O LADRÃO DE RAIOS'],
+        ['images/livros/harryPotter.jpg','Harry Potter calice de fogo'],
+        ['images/livros/manifesto.jpg','O manifesto'],
+        ['images/livros/1984.jpg','1984'],
+        ['images/livros/desventuras.jpg','Desventuras em série'],
+        ['images/livros/0aomilhao.jpg','Do 0 ao milhão']
+    ]
+
+    livros.forEach(cadaLivro =>{
         document.getElementById('catalogo').innerHTML += `
         <div class="livro">
-            <img src="images/livros/percy1.jpg" alt="">
-            <h4>PERCY JACKSON E O LADRÃO DE RAIOS</h4>
+            <img src="${cadaLivro[0]}" alt="">
+            <h4>${cadaLivro[1]}</h4>
 
             <button>
                 Adicionar
@@ -29,7 +38,7 @@ function carregarCatalogo(){
         </div>
         
         `
-    }
+    })
 }
 
 carregarCatalogo()
