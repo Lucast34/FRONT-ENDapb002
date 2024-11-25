@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body{
+            background-color: gray;
+        }
+
+        .post{
+            width: 90%;
+            height: auto;
+            background-color: rgb(36, 37, 37);
+            color: white;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        #user{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: rgb(36, 37, 37);
+            color: white;
+            padding: 10px 0px;
+        }
+
+        #user img{
+            width: 200px;
+            border-radius: 100%;
+        }
+
+        #upload{
+            width: 100%;
+            padding: 20px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        ::placeholder{
+            color: rgb(176, 176, 176);
+        }
+
+        input{
+            width: 400px;
+            padding: 10px;
+            outline: none;
+            background-color: rgb(36, 37, 37);
+            color: white;
+            border-radius: 10px;
+            border: none;
+        }
+        button{
+            padding: 10px;
+            outline: none;
+            background-color: rgb(36, 37, 37);
+            color: white;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <section id="user">
+
+    </section>
+
+    <section id="upload">
+        <input type="text" id="pensamento" placeholder="Escreva um pensamento ou uma mensagem">
+        <button onclick="postarFeed()">POSTAR</button>
+    </section>
+   
+    <div id="resposta"></div>
+
+    <script src="scripts/script2.js"></script>
+</body>
+</html>
